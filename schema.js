@@ -15,7 +15,6 @@ const commentsSchema= new mongoose.Schema({
     }
 })
 
-// Schema for Blog Posts
 const blogPostSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -52,7 +51,6 @@ const blogPostSchema = new mongoose.Schema({
     comments: [commentsSchema],
 });
 
-// Model
 const BlogPost = mongoose.model('BlogPost', blogPostSchema);
 
 module.exports = BlogPost;
